@@ -30,10 +30,10 @@ public class FoodOrderingSystem extends JFrame implements ActionListener {
         add(itemsPanel);
 
         // Add food items
-        addMenuItem("Margherita Pizza", 8.99);
-        addMenuItem("Cheeseburger", 6.49);
-        addMenuItem("French Fries", 3.99);
-        addMenuItem("Chocolate Shake", 4.49);
+        addMenuItem("Margherita Pizza", 89);
+        addMenuItem("Cheeseburger", 69);
+        addMenuItem("French Fries", 39);
+        addMenuItem("Chocolate Shake", 49);
 
         cartLabel = new JLabel("Cart: 0 items");
         cartLabel.setFont(new Font("Tahoma", Font.PLAIN, 16));
@@ -54,7 +54,7 @@ public class FoodOrderingSystem extends JFrame implements ActionListener {
         itemPanel.setLayout(new FlowLayout(FlowLayout.LEFT));
         itemPanel.setBackground(new Color(255, 245, 220)); // Soft card color
 
-        JLabel nameLabel = new JLabel(name + " - $" + price);
+        JLabel nameLabel = new JLabel(name + " - ₹ " + price);
         nameLabel.setFont(new Font("Tahoma", Font.PLAIN, 16));
         nameLabel.setPreferredSize(new Dimension(300, 30));
 
